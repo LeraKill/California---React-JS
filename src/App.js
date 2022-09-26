@@ -8,16 +8,16 @@ import Cards from "./pages/cards";
 function App() {
   return (
     <Router>
-      <Header />
-      <main>
-        <div className="wrapper">
+      <div className="wrapper">
+        <Header />
+        <main>
           <Routes>
             <Route exact path="/" element={<Main />} />
             <Route path="/about" element={<About />} />
             <Route path="/cards" element={<Cards />} />
           </Routes>
-        </div>
-      </main>
+        </main>
+      </div>
     </Router>
   );
 }
