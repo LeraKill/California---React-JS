@@ -14,7 +14,7 @@ const HeaderMobile = () => {
   return (
     <>
       <HeaderMenu />
-      <div className="menu__burger">
+      <div className="header__burger">
         <span />
       </div>
     </>
