@@ -1,17 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.scss";
-import { menuArr } from "../useHeader";
+import { useHeaderMenu } from "./useHeaderMenu";
 
 const HeaderMenu = () => {
-  const [openMenu, setOpenMenu] = useState(false);
-
-  const closeMenu = () => {
-    setOpenMenu(false);
-  };
-
-  const handleOpenMenu = () => {
-    setOpenMenu((prevState) => !prevState);
-  };
+  const { menuArr, openMenu, closeMenu, handleOpenMenu } = useHeaderMenu();
 
   return (
     <>
@@ -32,6 +24,15 @@ const HeaderMenu = () => {
                   </a>
                 </li>
               ))}
+            <div className="header__actions">
+              <a href="/">
+                <span className="icon icon-search" />
+              </a>
+              <a href="/">
+                {" "}
+                <span className="icon icon-cart" />
+              </a>
+            </div>
           </ul>
         </div>
       </nav>
