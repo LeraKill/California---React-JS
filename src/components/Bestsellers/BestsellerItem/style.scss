@@ -1,0 +1,47 @@
+@import "../../../styles/breakpoints.scss";
+
+.item-bestsellers {
+  flex: 0 1 25%;
+  //   width: 100%;
+  margin: 0 7px;
+  padding: 10px 13px 17px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    border-color: #cccccc;
+  }
+  &__link {
+  }
+  &__img {
+    padding: 28px;
+    width: 247px;
+    height: 214px;
+    margin: 0 auto 33px;
+  }
+  &__info {
+  }
+  &__title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 22px;
+    line-height: 120%;
+    margin-bottom: 9px;
+  }
+  &__text {
+    width: 260px;
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__price {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  @include l {
+    flex: 0 1 50%;
+    margin: 0 8px;
+  }
+}
