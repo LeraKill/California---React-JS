@@ -24,16 +24,16 @@ const HeaderMenu = () => {
                   </a>
                 </li>
               ))}
-            <div className="header__actions">
-              <a href="/">
-                <span className="icon icon-search" />
-              </a>
-              <a href="/">
-                {" "}
-                <span className="icon icon-cart" />
-              </a>
-            </div>
           </ul>
+          <div className="menu__actions">
+            <a href="/">
+              <span className="icon icon-search" />
+            </a>
+            <a href="/">
+              {" "}
+              <span className="icon icon-cart" />
+            </a>
+          </div>
         </div>
       </nav>
     </>

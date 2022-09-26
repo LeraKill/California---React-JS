@@ -1,7 +1,14 @@
 import React from "react";
+import Features from "../components/Features/Features";
+import Categories from "../components/Categories/Categories";
 
 const Main = () => {
-  return <div>Main</div>;
+  return (
+    <>
+      <Features />
+      <Categories />
+    </>
+  );
 };
 
 export default React.memo(Main);

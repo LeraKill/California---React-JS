@@ -1,0 +1,18 @@
+.block-header {
+  margin: 75px 0 55px 0;
+  &__title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 42px;
+    text-align: center;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 14px;
+    max-width: 628px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 120%;
+  }
+}
