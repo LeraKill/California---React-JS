@@ -1,0 +1,14 @@
+@import "../../styles/breakpoints.scss";
+
+.bestsellers {
+  &__body {
+    display: flex;
+    margin: 0 -7px;
+  }
+  @include l {
+    &__body {
+      flex-wrap: wrap;
+      margin: 0 -8px;
+    }
+  }
+}

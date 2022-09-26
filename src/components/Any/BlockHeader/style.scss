@@ -1,3 +1,5 @@
+@import "../../../styles/breakpoints.scss";
+
 .block-header {
   margin: 75px 0 55px 0;
   &__title {
@@ -9,10 +11,21 @@
   }
   &__text {
     font-family: "Readex Pro", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     max-width: 628px;
     margin: 0 auto;
     text-align: center;
     line-height: 120%;
+  }
+  @include m {
+    margin: 30px 0 22px 0;
+    &__title {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    &__text {
+      font-size: 12px;
+    }
   }
 }

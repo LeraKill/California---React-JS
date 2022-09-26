@@ -1,0 +1,173 @@
+@import "../../styles/breakpoints.scss";
+
+.categories {
+  &__body {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  &__left-part {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 630px;
+    margin-right: 16px;
+  }
+  &__right-part {
+    display: flex;
+    flex: 1 1 auto;
+  }
+  &__item {
+    display: flex;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+    &__link {
+      transition: all 0.3s ease 0s;
+      &:hover {
+        margin-top: 20px;
+      }
+    }
+    &-title {
+      font-family: "Readex Pro", sans-serif;
+      font-size: 32px;
+      line-height: 120%;
+      text-align: right;
+    }
+    &-text {
+      font-size: 15px;
+      line-height: 120%;
+      text-align: right;
+    }
+  }
+
+  &__item-laptop {
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 472px;
+    &__img {
+      margin: 0 0 0 42px;
+      width: 500px;
+      height: 377px;
+    }
+    &__info {
+      max-width: 190px;
+      margin: 0 42px 0 auto;
+    }
+    &__title {
+    }
+    &__text {
+    }
+  }
+
+  &__item-watches {
+    align-items: center;
+    width: 100%;
+    height: 270px;
+    &__img {
+      margin: 0 0 0 42px;
+      width: 500px;
+      height: 270px;
+    }
+    &__info {
+      max-width: 190px;
+      margin: 0 42px 0 auto;
+    }
+    &__title {
+    }
+    &__text {
+    }
+  }
+  &__item-phones {
+    margin-right: 16px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    // flex: 0 1 50%;
+    width: 312px;
+    // width: 100%;
+    height: 792px;
+    &__img {
+      margin: 143px 0 42px 16px;
+      width: 100%;
+      height: 370px;
+    }
+    &__info {
+      max-width: 190px;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+    @include m {
+      width: 100%;
+    }
+  }
+  &__item-tablet {
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    // flex: 0 1 50%;
+    width: 312px;
+    // width: 100%;
+    height: 792px;
+    &__img {
+      margin: 0;
+      width: 100%;
+      height: 370px;
+    }
+    &__info {
+      margin: 115px 0 42px 0;
+      max-width: 190px;
+      order: -1;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+    @include m {
+      width: 100%;
+    }
+    &__info {
+      order: 0;
+    }
+  }
+
+  @include m {
+    &__body {
+      flex-direction: column;
+    }
+    &__left-part {
+      width: 100%;
+      margin-right: 0;
+      flex: 0 1 auto;
+    }
+    &__right-part {
+      flex-direction: column;
+      width: 100%;
+    }
+    &__item {
+      margin: 0 0 20px 0;
+      flex-direction: row;
+      align-items: center;
+      height: 65px;
+      box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+      &__info {
+        max-width: 190px;
+        margin: 0 16px 0 auto;
+      }
+      &__img {
+        height: 100%;
+        width: 128px;
+        margin: 0;
+      }
+      &-title {
+        font-size: 16px;
+      }
+      &-text {
+        font-size: 12px;
+      }
+    }
+  }
+}
