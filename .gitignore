@@ -1,0 +1,12 @@
+/.vscode/
+
+*.DS_Store
+*.psd
+
+*/**/node_modules/
+
+
+/node_modules
+/.pnp
+.pnp.js
+.idea/
