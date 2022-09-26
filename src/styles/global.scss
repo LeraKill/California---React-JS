@@ -1,0 +1,9 @@
+@import url("fonts.scss");
+
+$main-font: "Inter", sans-serif;
+$second-font: "Readex Pro", sans-serif;
+
+body {
+  font-size: 40px;
+  font-family: $main-font;
+}
