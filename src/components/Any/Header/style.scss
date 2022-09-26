@@ -1,4 +1,4 @@
-@import "../../styles/breakpoints";
+@import "../../../styles/breakpoints.scss";
 
 .header {
   position: fixed;
@@ -29,6 +29,7 @@
   }
 
   &__logo {
+    flex: 0 1 170px;
     height: 21px;
     position: relative;
     z-index: 10;

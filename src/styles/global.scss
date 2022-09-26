@@ -1,5 +1,6 @@
 @import url("fonts.scss");
 @import url("nullStyles.scss");
+@import url("icon-font.scss");
 
 $main-font: "Inter", sans-serif;
 $title-font: "Readex Pro", sans-serif;
@@ -41,6 +42,6 @@ body {
   }
 }
 
-main {
+.page {
   flex: 1 1 auto;
 }
