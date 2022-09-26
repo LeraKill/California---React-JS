@@ -1,9 +1,40 @@
 @import url("fonts.scss");
+@import url("nullStyles.scss");
 
 $main-font: "Inter", sans-serif;
-$second-font: "Readex Pro", sans-serif;
+$title-font: "Readex Pro", sans-serif;
+
+$main-color: #000000;
+$second-color: #4b4b4b;
 
 body {
-  font-size: 40px;
   font-family: $main-font;
+  color: $main-color;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.__container {
+  width: 100%;
+  max-width: 1294px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+._ibg {
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
