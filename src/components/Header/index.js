@@ -1,8 +1,22 @@
 import React from "react";
-import Logo from "../../assets/icons/logo.svg";
+import "./style.scss";
+import HeaderMenu from "./HeaderMenu/HeaderMenu";
 
 const Header = () => {
-  return <header>Header</header>;
+  return (
+    <header className="header">
+      <div className="header__container __container">
+        <div className="header__content">
+          <div className="header__logo">
+            <a href="/">
+              <img src="logo.svg" alt="california" />
+            </a>
+          </div>
+          <HeaderMenu />
+        </div>
+      </div>
+    </header>
+  );
 };
 
 export default Header;

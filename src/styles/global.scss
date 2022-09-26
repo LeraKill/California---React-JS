@@ -10,6 +10,9 @@ $second-color: #4b4b4b;
 body {
   font-family: $main-font;
   color: $main-color;
+  &.__lock {
+    overflow: hidden;
+  }
 }
 
 .wrapper {
@@ -37,4 +40,8 @@ body {
     width: 100%;
     height: 100%;
   }
+}
+
+main {
+  flex: 1 1 auto;
 }
