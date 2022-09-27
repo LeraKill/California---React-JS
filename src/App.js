@@ -4,6 +4,7 @@ import Header from "./components/Any/Header/Header";
 import Main from "./pages";
 import About from "./pages/about";
 import Cards from "./pages/cards";
+import Footer from "./components/Any/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/cards" element={<Cards />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );
