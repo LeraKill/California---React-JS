@@ -1,0 +1,12 @@
+@import "../../styles/breakpoints.scss";
+
+.limited {
+  &__body {
+    display: flex;
+    margin: 0 -14px;
+    @include l {
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+}
