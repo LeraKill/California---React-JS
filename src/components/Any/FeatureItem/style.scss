@@ -1,9 +1,13 @@
+@import "../../../styles/breakpoints.scss";
 .feature {
   &__body {
     position: relative;
   }
   &__img {
-    height: 550px;
+    padding: 0 0 50% 0;
+    border-radius: 32px;
+    overflow: hidden;
+    // height: 550px;
     width: 100%;
     img {
       margin-bottom: 550px;
@@ -12,19 +16,55 @@
   &__content {
     max-width: 600px;
     position: absolute;
-    top: 145px;
-    left: 56px;
+    top: 25%;
+    left: 5%;
+    @include s {
+      top: 15%;
+    }
+    @include xs {
+      top: 8%;
+    }
   }
   &__title {
     font-family: "Readex Pro", sans-serif;
     font-size: 58px;
     line-height: 120%;
     margin-bottom: 20px;
+    @include xm {
+      font-size: 40px;
+      max-width: 400px;
+    }
+    @include m {
+      max-width: 220px;
+      font-size: 22px;
+      margin-bottom: 7px;
+    }
+    @include xs {
+      max-width: 200px;
+      font-size: 18px;
+    }
+    @include xxs {
+      max-width: 200px;
+      font-size: 15px;
+    }
   }
   &__text {
     font-size: 16px;
     line-height: 120%;
     margin-bottom: 44px;
+    @include xm {
+      max-width: 300px;
+      margin-bottom: 30px;
+    }
+    @include m {
+      max-width: 200px;
+      font-size: 10px;
+      margin-bottom: 20px;
+    }
+    @include xs {
+      max-width: 180px;
+      margin-bottom: 12px;
+    }
   }
   &__link {
     font-size: 18px;
@@ -36,6 +76,14 @@
     &:hover {
       color: white;
       background-color: black;
+    }
+    @include xm {
+      font-size: 16px;
+      padding: 10px 35px;
+    }
+    @include m {
+      font-size: 10px;
+      padding: 6px 20px;
     }
   }
 }
