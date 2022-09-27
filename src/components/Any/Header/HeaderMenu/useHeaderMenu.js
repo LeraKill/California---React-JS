@@ -27,6 +27,7 @@ export const useHeaderMenu = () => {
   };
 
   const handleOpenMenu = () => {
+    document.body.classList.toggle("__lock");
     setOpenMenu((prevState) => !prevState);
   };
 

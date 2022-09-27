@@ -4,7 +4,7 @@ import FeaturesSwiper from "./FeaturesSwiper/FeaturesSwiper";
 
 const Features = () => {
   return (
-    <section class="page__features features">
+    <section className="page__features features">
       <div className="features__container __container">
         <FeaturesSwiper />
       </div>
