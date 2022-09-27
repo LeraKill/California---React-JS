@@ -22,6 +22,10 @@ const Ideas = () => {
             <p> We Make It Easy To Find The Great Design Talent, Easier...</p>
           </div>
         </div>
+        <a className="ideas__link" href="/">
+          See All
+          <span className="icon-arrow" />
+        </a>
       </div>
     </section>
   );
