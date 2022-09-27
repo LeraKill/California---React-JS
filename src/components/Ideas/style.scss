@@ -1,0 +1,40 @@
+@import "../../styles/breakpoints.scss";
+
+.ideas {
+  &__body {
+    display: flex;
+    align-items: flex-start;
+    @include xm {
+      flex-direction: column;
+    }
+  }
+  &__img {
+    flex: 0 1 620px;
+    width: 100%;
+    padding: 0 0 33% 0;
+    margin: 0 35px 0 0;
+    border-radius: 16px;
+    overflow: hidden;
+    @include xm {
+      flex: 0 1 100%;
+      margin: 0 0 15px 0;
+      padding: 0 0 50% 0;
+    }
+  }
+  &__content {
+    flex: 1 1 auto;
+    font-size: 24px;
+    line-height: 120%;
+    @include m {
+      font-size: 14px;
+    }
+    p {
+      &:not(:last-child) {
+        margin-bottom: 23px;
+        @include xm {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
