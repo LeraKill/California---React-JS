@@ -15,8 +15,9 @@ const Bestsellers = () => {
         />
         <div className="bestsellers__body">
           {bestsellersArr &&
-            bestsellersArr.map((item) => (
+            bestsellersArr.map((item, index) => (
               <BestsellerItem
+                key={`${item.title}_${index}`}
                 title={item.title}
                 text={item.text}
                 price={item.price}

@@ -27,7 +27,7 @@ const FeaturesSwiper = () => {
           featureSwiperArr.map((item, index) => (
             <SwiperSlide>
               <FeatureItem
-                key={index}
+                key={`${item.title}_${index}`}
                 title={item.title}
                 text={item.text}
                 button={item.button}
