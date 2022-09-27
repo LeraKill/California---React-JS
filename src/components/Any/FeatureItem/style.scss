@@ -4,13 +4,12 @@
     position: relative;
   }
   &__img {
-    padding: 0 0 50% 0;
+    padding: 0 0 45% 0;
     border-radius: 32px;
     overflow: hidden;
-    // height: 550px;
     width: 100%;
     img {
-      margin-bottom: 550px;
+      object-fit: contain;
     }
   }
   &__content {
@@ -18,6 +17,9 @@
     position: absolute;
     top: 25%;
     left: 5%;
+    @include m-special {
+      top: 15%;
+    }
     @include s {
       top: 15%;
     }

@@ -1,0 +1,60 @@
+@import "../../../styles/breakpoints.scss";
+
+.swiper__wrapper {
+  width: 100%;
+  //   height: 550px;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+  overflow: hidden;
+
+  &__prev,
+  &__next {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    @include m {
+      width: 18px;
+      height: 18px;
+    }
+    @include s {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  &__prev {
+    left: 20px;
+    transform: rotate(-135deg);
+    @include m {
+      left: 10px;
+    }
+  }
+  &__next {
+    right: 20px;
+    transform: rotate(45deg);
+    @include m {
+      right: 10px;
+    }
+  }
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  vertical-align: center;
+}
+
+.swiper-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+}

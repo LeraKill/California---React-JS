@@ -3,6 +3,7 @@ $breakpoints: (
   "xs": 390px,
   "s": 440px,
   "m": 725px,
+  "m-special": 850px,
   "xm": 1115px,
   "l": 1210px,
 );
@@ -21,6 +22,12 @@ $breakpoints: (
 
 @mixin s {
   @media (max-width: map-get($breakpoints, "s")) {
+    @content;
+  }
+}
+
+@mixin m-special {
+  @media (max-width: map-get($breakpoints, "m-special")) {
     @content;
   }
 }
