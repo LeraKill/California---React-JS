@@ -4,24 +4,53 @@
   &__body {
     display: flex;
     margin-bottom: 50px;
+    @include l {
+      flex-direction: column;
+    }
   }
   &__left-part {
     display: flex;
     flex-direction: column;
-    flex: 0 1 630px;
+    flex: 0 1 50%;
     margin-right: 16px;
+    @include l {
+      width: 100%;
+      margin-right: 0;
+      flex: 0 1 auto;
+    }
   }
   &__right-part {
     display: flex;
-    flex: 1 1 auto;
+    flex: 0 1 50%;
+    @include l {
+      flex-direction: column;
+      width: 100%;
+    }
   }
   &__item {
-    display: flex;
     box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
-    &__link {
-      transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      margin-top: 20px;
+    }
+    @include l {
+      margin: 0 0 20px 0;
+      height: 65px;
+      box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
       &:hover {
-        margin-top: 20px;
+        box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    &__link {
+      display: flex;
+      height: 100%;
+      width: 100%;
+
+      @include l {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
       }
     }
     &-title {
@@ -29,96 +58,168 @@
       font-size: 32px;
       line-height: 120%;
       text-align: right;
+      @include l {
+        font-size: 16px;
+      }
     }
     &-text {
       font-size: 15px;
       line-height: 120%;
       text-align: right;
+      @include l {
+        font-size: 12px;
+      }
     }
   }
 
   &__item-laptop {
-    flex-direction: column;
     margin-bottom: 50px;
     width: 100%;
     height: 472px;
+    @include l {
+      height: 65px;
+      margin-bottom: 20px;
+    }
+    &-link {
+      flex-direction: column;
+      align-items: flex-start;
+      @include l {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
     &__img {
       margin: 0 0 0 42px;
       width: 500px;
-      height: 377px;
+      padding: 0 0 53% 0;
+      @include l {
+        width: 137px;
+        padding: 0 0 9% 0;
+        margin: 0;
+      }
     }
     &__info {
       max-width: 190px;
-      margin: 0 42px 0 auto;
-    }
-    &__title {
-    }
-    &__text {
+      margin: 0 42px 15px auto;
+      @include l {
+        margin: 0 16px 0 auto;
+      }
     }
   }
 
   &__item-watches {
-    align-items: center;
     width: 100%;
     height: 270px;
+    @include l {
+      height: 65px;
+    }
+    &-link {
+      align-items: center;
+    }
     &__img {
       margin: 0 0 0 42px;
       width: 500px;
-      height: 270px;
+      padding: 0 0 39% 0;
+      @include l {
+        width: 111px;
+        padding: 0 0 9% 0;
+        margin: 0;
+        img {
+          object-fit: contain;
+        }
+      }
     }
     &__info {
       max-width: 190px;
       margin: 0 42px 0 auto;
-    }
-    &__title {
-    }
-    &__text {
+      @include l {
+        margin: 0 16px 0 auto;
+      }
     }
   }
   &__item-phones {
     margin-right: 16px;
     overflow: hidden;
-    flex-direction: column;
-    align-items: center;
-    // flex: 0 1 50%;
-    width: 312px;
-    // width: 100%;
+    flex: 0 0 50%;
     height: 792px;
+    @include l {
+      width: 100%;
+      height: 65px;
+    }
+    &-link {
+      flex-direction: column;
+      align-items: center;
+      @include l {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
     &__img {
       margin: 143px 0 42px 16px;
       width: 100%;
-      height: 370px;
+      padding: 0 0 125% 0;
+      @include l {
+        width: 129px;
+        padding: 0 0 9% 0;
+        margin: 0;
+      }
     }
     &__info {
       max-width: 190px;
+      margin: 0 auto;
+      @include l {
+        margin: 0 16px 0 auto;
+      }
     }
     &__title {
       text-align: center;
+      @include l {
+        text-align: right;
+      }
     }
     &__text {
       text-align: center;
-    }
-    @include m {
-      width: 100%;
+      @include l {
+        text-align: right;
+      }
     }
   }
   &__item-tablet {
     overflow: hidden;
-    flex-direction: column;
-    align-items: center;
-    // flex: 0 1 50%;
-    width: 312px;
-    // width: 100%;
+    flex: 0 0 50%;
     height: 792px;
+    @include l {
+      height: 65px;
+    }
+    &-link {
+      flex-direction: column;
+      align-items: center;
+      @include l {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
     &__img {
       margin: 0;
       width: 100%;
-      height: 370px;
+      padding: 0 0 145% 0;
+      @include l {
+        width: 120px;
+        padding: 0 0 9% 0;
+        transform: scale(1.6) rotate(45deg);
+      }
     }
     &__info {
       margin: 115px 0 42px 0;
       max-width: 190px;
       order: -1;
+      @include l {
+        margin: 0 16px 0 auto;
+        order: 0;
+      }
     }
     &__title {
       text-align: center;
@@ -126,47 +227,13 @@
     &__text {
       text-align: center;
     }
-    @include m {
+    @include l {
       width: 100%;
-    }
-    &__info {
-      order: 0;
-    }
-  }
-
-  @include m {
-    &__body {
-      flex-direction: column;
-    }
-    &__left-part {
-      width: 100%;
-      margin-right: 0;
-      flex: 0 1 auto;
-    }
-    &__right-part {
-      flex-direction: column;
-      width: 100%;
-    }
-    &__item {
-      margin: 0 0 20px 0;
-      flex-direction: row;
-      align-items: center;
-      height: 65px;
-      box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
-      &__info {
-        max-width: 190px;
-        margin: 0 16px 0 auto;
+      &__title {
+        text-align: right;
       }
-      &__img {
-        height: 100%;
-        width: 128px;
-        margin: 0;
-      }
-      &-title {
-        font-size: 16px;
-      }
-      &-text {
-        font-size: 12px;
+      &__text {
+        text-align: right;
       }
     }
   }

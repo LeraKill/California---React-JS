@@ -13,9 +13,8 @@
   &__link {
   }
   &__img {
-    padding: 28px;
+    padding: 0 0 80% 0;
     width: 247px;
-    height: 214px;
     margin: 0 auto 33px;
   }
   &__info {
@@ -38,10 +37,5 @@
   &__price {
     font-size: 18px;
     text-transform: uppercase;
-  }
-
-  @include l {
-    flex: 0 1 50%;
-    margin: 0 8px;
   }
 }
