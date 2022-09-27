@@ -1,0 +1,66 @@
+@import "../../../styles/breakpoints.scss";
+
+.item-limited {
+  margin: 0 14px;
+  flex: 0 1 33.3333%;
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  font-family: "Readex Pro", sans-serif;
+  @include l {
+    margin: 0 0 2px 0;
+    flex: 1 1 100%;
+  }
+
+  &__info {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__subtitle {
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+    @include s {
+      margin: 0 0 4px 0;
+    }
+  }
+  &__title {
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+    margin: 0 0 30px 0;
+    @include s {
+      font-size: 16px;
+      margin: 0 0 9px 0;
+    }
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 120%;
+    padding: 15px 63px;
+    border-radius: 200px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
+    @include s {
+      padding: 6px 20px;
+      margin-bottom: 10px;
+    }
+  }
+  &__img {
+    max-width: 355px;
+    margin: 0 auto;
+    padding: 0 0 60% 0;
+    img {
+      object-fit: contain;
+    }
+    @include l {
+      padding: 0 0 30% 0;
+    }
+  }
+}
