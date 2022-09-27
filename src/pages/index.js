@@ -2,6 +2,7 @@ import React from "react";
 import Features from "../components/Features/Features";
 import Categories from "../components/Categories/Categories";
 import Bestsellers from "../components/Bestsellers/Bestsellers";
+import Limited from "../components/Limited/Limited";
 
 const Main = () => {
   return (
@@ -9,6 +10,7 @@ const Main = () => {
       <Features />
       <Categories />
       <Bestsellers />
+      <Limited />
     </>
   );
 };
