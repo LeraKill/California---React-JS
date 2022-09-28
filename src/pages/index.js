@@ -5,6 +5,7 @@ import Bestsellers from "../components/Bestsellers/Bestsellers";
 import Limited from "../components/Limited/Limited";
 import Ideas from "../components/Ideas/Ideas";
 import Search from "../components/Search/Search";
+import Subscribe from "../components/Subscribe/Subscribe";
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
       <Limited />
       <Ideas />
       <Search />
+      <Subscribe />
     </>
   );
 };
