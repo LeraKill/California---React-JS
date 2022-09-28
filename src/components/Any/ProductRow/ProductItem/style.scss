@@ -1,8 +1,8 @@
-@import "../../../styles/breakpoints.scss";
+@import "../../../../styles/breakpoints.scss";
 
 .item-bestsellers {
   flex: 0 1 25%;
-  margin: 0 7px;
+  margin: 0;
   padding: 10px 13px 17px;
   border: 1px solid transparent;
   transition: all 0.3s ease 0s;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 
-const BestsellerItem = ({ title, text, price, img }) => {
+const ProductItem = ({ title, text, price, img }) => {
   return (
     <div className="bestsellers__item item-bestsellers">
       <a href="/" className="item-bestsellers__link">
@@ -18,4 +18,4 @@ const BestsellerItem = ({ title, text, price, img }) => {
   );
 };
 
-export default BestsellerItem;
+export default ProductItem;
