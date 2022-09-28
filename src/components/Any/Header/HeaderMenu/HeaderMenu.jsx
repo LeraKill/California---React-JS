@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.scss";
 import { useHeaderMenu } from "./useHeaderMenu";
+import { Link } from "react-router-dom";
 
 const HeaderMenu = () => {
   const { menuArr, openMenu, closeMenu, handleOpenMenu } = useHeaderMenu();
@@ -18,10 +19,10 @@ const HeaderMenu = () => {
           <ul className="menu__list">
             {menuArr &&
               menuArr.map((item, index) => (
-                <li key={index} className="menu__item">
-                  <a href={item.href} onClick={closeMenu}>
+                <li key={`${item.title}_${index}`} className="menu__item">
+                  <Link to={item.href} onClick={closeMenu}>
                     {item.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
           </ul>
@@ -30,7 +31,6 @@ const HeaderMenu = () => {
               <span className="icon icon-search" />
             </a>
             <a href="/">
-              {" "}
               <span className="icon icon-cart" />
             </a>
           </div>
