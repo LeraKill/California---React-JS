@@ -7,8 +7,8 @@ const Search = () => {
     searchItemsArr,
     searchTerm,
     getSearchTerm,
-    activeItem,
-    onSelectItem,
+    activeItems,
+    getActiveItems,
   } = useSearch();
 
   return (
@@ -39,9 +39,9 @@ const Search = () => {
                 .map((val, index) => (
                   <li
                     key={`${val}_${index}`}
-                    onClick={() => onSelectItem(index)}
+                    onClick={() => getActiveItems(index)}
                     className={`search__item ${
-                      activeItem === index ? "search__item-chosen" : ""
+                      activeItems.includes(index) ? "search__item-chosen" : ""
                     }`}
                   >
                     {val}

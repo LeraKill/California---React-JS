@@ -19,17 +19,21 @@ export const useSearch = () => {
     setSearchTerm(e.target.value);
   };
 
-  const [activeItem, setActiveItem] = useState(null);
+  const [activeItems, setActiveItems] = useState([]);
 
-  const onSelectItem = (index) => {
-    setActiveItem(index);
+  const getActiveItems = (newActiveItem) => {
+    setActiveItems((activeItems) =>
+      activeItems.includes(newActiveItem)
+        ? activeItems.filter((item) => item !== newActiveItem)
+        : [newActiveItem, ...activeItems]
+    );
   };
 
   return {
     searchTerm,
     getSearchTerm,
     searchItemsArr,
-    activeItem,
-    onSelectItem,
+    activeItems,
+    getActiveItems,
   };
 };
