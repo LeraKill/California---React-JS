@@ -60,6 +60,9 @@
       }
     }
   }
+  .active {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
   &__burger {
     display: none;
     @include m {
