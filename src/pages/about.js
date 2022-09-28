@@ -1,7 +1,8 @@
 import React from "react";
+import About from "../components/About/About";
 
-const About = () => {
-  return <>About</>;
+const AboutPage = () => {
+  return <About />;
 };
 
-export default React.memo(About);
+export default React.memo(AboutPage);

@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/global.scss";
 import Header from "./components/Any/Header/Header";
-import Main from "./pages";
-import About from "./pages/about";
-import Cards from "./pages/cards";
+import MainPage from "./pages";
+import AboutPage from "./pages/about";
+import CardsPage from "./pages/cards";
 import Footer from "./components/Any/Footer/Footer";
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
         <Header />
         <main className="page">
           <Routes>
-            <Route exact path="/" element={<Main />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/cards" element={<Cards />} />
+            <Route exact path="/" element={<MainPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/cards" element={<CardsPage />} />
           </Routes>
         </main>
         <Footer />
