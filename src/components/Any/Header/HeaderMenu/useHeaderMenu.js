@@ -8,7 +8,7 @@ export const useHeaderMenu = () => {
     },
     {
       title: "All products",
-      href: "/cards",
+      href: "/products",
     },
     {
       title: "Solutions",
