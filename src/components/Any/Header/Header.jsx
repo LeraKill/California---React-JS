@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.scss";
 import HeaderMenu from "./HeaderMenu/HeaderMenu";
+import Logo from "../../../assets/images/logo.svg";
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       <div className="header__container __container">
         <div className="header__logo">
           <a href="/">
-            <img src="logo.svg" alt="california" />
+            <img src={Logo} alt="california" />
           </a>
         </div>
         <HeaderMenu />

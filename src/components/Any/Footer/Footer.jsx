@@ -1,31 +1,11 @@
 import React from "react";
 import "./style.scss";
 import FooterItem from "./FooterItem/FooterItem";
+import Logo from "../../../assets/images/logo.svg";
+import { useFooter } from "./useFooter";
 
 const Footer = () => {
-  const allProductsArr = [
-    { text: "Phones", href: "/" },
-    { text: "Watch", href: "/" },
-    { text: "Tablet", href: "/" },
-    { text: "Laptops", href: "/" },
-  ];
-  const companyArr = [
-    { text: "About", href: "/about" },
-    { text: "Support", href: "/" },
-  ];
-  const supportArr = [
-    { text: "Style Guide", href: "/" },
-    { text: "Licensing", href: "/" },
-    { text: "Change Log", href: "/" },
-    { text: "Contact", href: "/" },
-  ];
-
-  const socialArr = [
-    { text: "Instagram", href: "/" },
-    { text: "Facebook", href: "/" },
-    { text: "LinkedIn", href: "/" },
-    { text: "Youtube", href: "/" },
-  ];
+  const { allProductsArr, companyArr, supportArr, socialArr } = useFooter();
   return (
     <footer className="footer">
       <div className="footer__container __container">
@@ -33,7 +13,7 @@ const Footer = () => {
           <div className="footer__top top-footer">
             <div className="top-footer__logo">
               <div className="top-footer__img _ibg">
-                <img src="logo.svg" alt="California" />
+                <img src={Logo} alt="California" />
               </div>
               <p className="top-footer__text">
                 Sign up for texts to be notified about our best offers on the
