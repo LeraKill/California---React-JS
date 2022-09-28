@@ -1,7 +1,7 @@
 import React from "react";
 
-const Cards = () => {
+const CardsPage = () => {
   return <>Cards</>;
 };
 
-export default React.memo(Cards);
+export default React.memo(CardsPage);

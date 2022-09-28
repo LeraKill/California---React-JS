@@ -7,7 +7,7 @@ import Ideas from "../components/Ideas/Ideas";
 import Search from "../components/Search/Search";
 import Subscribe from "../components/Subscribe/Subscribe";
 
-const Main = () => {
+const MainPage = () => {
   return (
     <>
       <Features />
@@ -21,4 +21,4 @@ const Main = () => {
   );
 };
 
-export default React.memo(Main);
+export default React.memo(MainPage);
