@@ -5,7 +5,7 @@ import { NavLink, Link } from "react-router-dom";
 
 const HeaderMenu = () => {
   const { menuArr, openMenu, closeMenu, handleOpenMenu } = useHeaderMenu();
-
+  const baseUrl = process.env.PUBLIC_URL;
   return (
     <>
       <nav className="header__menu menu">
@@ -20,17 +20,17 @@ const HeaderMenu = () => {
             {menuArr &&
               menuArr.map((item, index) => (
                 <li key={`${item.title}_${index}`} className="menu__item">
-                  <NavLink to={item.href} onClick={closeMenu}>
+                  <NavLink to={`${baseUrl}${item.href}`} onClick={closeMenu}>
                     {item.title}
                   </NavLink>
                 </li>
               ))}
           </ul>
           <div className="menu__actions">
-            <Link to="/">
+            <Link to={`${baseUrl}/`}>
               <span className="icon icon-search" />
             </Link>
-            <Link to="/">
+            <Link to={`${baseUrl}/`}>
               <span className="icon icon-cart" />
             </Link>
           </div>
