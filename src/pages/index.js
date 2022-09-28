@@ -4,6 +4,7 @@ import Categories from "../components/Categories/Categories";
 import Bestsellers from "../components/Bestsellers/Bestsellers";
 import Limited from "../components/Limited/Limited";
 import Ideas from "../components/Ideas/Ideas";
+import Search from "../components/Search/Search";
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
       <Bestsellers />
       <Limited />
       <Ideas />
+      <Search />
     </>
   );
 };
