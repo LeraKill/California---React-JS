@@ -12,11 +12,11 @@ export const useHeaderMenu = () => {
     },
     {
       title: "Solutions",
-      href: "/",
+      href: "/solutions",
     },
     {
       title: "Support",
-      href: "/",
+      href: "/support",
     },
   ];
 

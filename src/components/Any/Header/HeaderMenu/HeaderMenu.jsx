@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import { useHeaderMenu } from "./useHeaderMenu";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const HeaderMenu = () => {
   const { menuArr, openMenu, closeMenu, handleOpenMenu } = useHeaderMenu();
@@ -20,19 +20,19 @@ const HeaderMenu = () => {
             {menuArr &&
               menuArr.map((item, index) => (
                 <li key={`${item.title}_${index}`} className="menu__item">
-                  <Link to={item.href} onClick={closeMenu}>
+                  <NavLink to={item.href} onClick={closeMenu}>
                     {item.title}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
           </ul>
           <div className="menu__actions">
-            <a href="/">
+            <Link to="/">
               <span className="icon icon-search" />
-            </a>
-            <a href="/">
+            </Link>
+            <Link to="/">
               <span className="icon icon-cart" />
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
