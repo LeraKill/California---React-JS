@@ -8,7 +8,7 @@ import Footer from "./components/Any/Footer/Footer";
 
 function App() {
   return (
-    <Router>
+    <Router path="/">
       <div className="wrapper">
         <Header />
         <main className="page">
