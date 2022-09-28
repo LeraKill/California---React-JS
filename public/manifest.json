@@ -1,7 +1,7 @@
 {
   "short_name": "California",
   "name": "California Website",
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff"
 }
