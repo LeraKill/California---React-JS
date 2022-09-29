@@ -14,6 +14,9 @@
     padding: 0 0 80% 0;
     width: 247px;
     margin: 0 auto 33px;
+    @include s {
+      margin: 0 auto 18px;
+    }
   }
 
   &__title {
