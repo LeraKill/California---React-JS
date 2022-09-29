@@ -32,6 +32,9 @@
     transition: all 0.3s ease 0s;
     &:hover {
       margin-top: 20px;
+      @include l {
+        margin-top: 0px;
+      }
     }
     @include l {
       margin: 0 0 20px 0;

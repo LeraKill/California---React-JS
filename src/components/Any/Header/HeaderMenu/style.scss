@@ -1,11 +1,18 @@
 @import "../../../../styles/breakpoints.scss";
 .menu {
+  flex: 1 1 auto;
+  @include m {
+    flex: 0;
+  }
   &__body {
+    width: 100%;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     @include m {
       width: 100%;
       height: 100%;
+      justify-content: flex-start;
       position: fixed;
       background-color: white;
       top: 0;
@@ -13,7 +20,7 @@
       left: -100%;
       overflow-y: auto;
       overflow-x: hidden;
-      margin: 88px 0 0 0;
+      padding: 88px 0 0 0;
       &._active {
         left: 0;
         flex-direction: column;
@@ -24,10 +31,13 @@
   &__list {
     display: flex;
     align-items: center;
+    padding-left: 285px;
+
     @include m {
       flex-direction: column;
       align-items: flex-start;
       margin-left: 16px;
+      padding-left: 0px;
     }
   }
   &__item {

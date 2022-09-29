@@ -24,6 +24,7 @@ export const useHeaderMenu = () => {
 
   const closeMenu = () => {
     setOpenMenu(false);
+    document.body.classList.remove("__lock");
   };
 
   const handleOpenMenu = () => {
@@ -35,6 +36,7 @@ export const useHeaderMenu = () => {
     openMenu,
     closeMenu,
     handleOpenMenu,
+
     menuArr,
   };
 };
