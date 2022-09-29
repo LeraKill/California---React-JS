@@ -31,4 +31,6 @@ npm start
 - Создала сайт с тремя активными страницами - Main, About и Products
 - Для маршрутизации использовала react-router-dom v6
 - Реализовала свайпер на главной странице с помощью библиотеки swiper
+![Swiper](https://drive.google.com/file/d/1ny4dnKogsWTNubJQqwm7nPS4_rUAUhDJ/view?usp=sharing)
+
 - Сделала адаптив без макета
